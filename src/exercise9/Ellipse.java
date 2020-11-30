@@ -1,24 +1,24 @@
 package exercise9;
 
 public class Ellipse {
-    private Point startingPoint;
+    private Point startPoint;
     private double a;
     private double b;
 
     public Ellipse() {
-        this.startingPoint = new Point(0, 0);
+        this.startPoint = new Point(0, 0);
         this.a = 1;
         this.b = 1;
     }
 
     public Ellipse(Point startingPoint, double a, double b) {
-        this.startingPoint = new Point(startingPoint);
+        this.startPoint = new Point(startingPoint);
         this.a = a;
         this.b = b;
     }
 
     public Ellipse(Ellipse otherEllipse) {
-        this.startingPoint = new Point(otherEllipse.startingPoint);
+        this.startPoint = new Point(otherEllipse.startPoint);
         this.a = otherEllipse.a;
         this.b = otherEllipse.b;
     }
@@ -30,7 +30,7 @@ public class Ellipse {
     public void initialize() {
         do {
             System.out.println("Initialize start point: ");
-            startingPoint.initialize();
+            startPoint.initialize();
             System.out.print("Enter a value for a: ");
             this.a = Utils.INPUT.nextDouble();
             System.out.print("Enter a value for b: ");
@@ -51,7 +51,7 @@ public class Ellipse {
         return (a == b) ? "Circle" : "Ellipse";
     }
     public String toString() {
-        return String.format("%s-[%s, %s], %s, P=%s, A=%s", startingPoint, a, b, getType(), calculatePerimeter(), calculateArea());
+        return String.format("%s-[%s, %s], %s, P=%s, A=%s", startPoint, a, b, getType(), calculatePerimeter(), calculateArea());
     }
 
     public boolean equals(Ellipse otherEllipse) {
