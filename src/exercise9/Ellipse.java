@@ -29,7 +29,7 @@ public class Ellipse {
 
     public void initialize() {
         do {
-            System.out.println("Initializing Ellipse: ");
+            System.out.println("Initialize start point: ");
             startingPoint.initialize();
             System.out.print("Enter a value for a: ");
             this.a = Utils.INPUT.nextDouble();
