@@ -11,7 +11,7 @@ public class Ellipse {
         this.b = 1;
     }
 
-    public Ellipse(Point startPoint, double a, double b) {
+    public Ellipse(Point startingPoint, double a, double b) {
         this.startingPoint = new Point(startingPoint);
         this.a = a;
         this.b = b;
