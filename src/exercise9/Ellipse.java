@@ -29,11 +29,11 @@ public class Ellipse {
 
     public void initialize() {
         do {
-            System.out.println("Start point: ");
+            System.out.println("Initializing Ellipse: ");
             startingPoint.initialize();
-            System.out.print("Enter a: ");
+            System.out.print("Enter a value for a: ");
             this.a = Utils.INPUT.nextDouble();
-            System.out.print("Enter b: ");
+            System.out.print("Enter a value for b: ");
             this.b = Utils.INPUT.nextDouble();
         } while (!isValid());
     }
