@@ -3,8 +3,8 @@ package exercise9;
 public class EllipseDemo {
     public static void main(String[] args) {
     Ellipse ellipse1 = new Ellipse();
-    Point startPoint1 = new Point(2,3);
-    Ellipse ellipse2 = new Ellipse(startPoint1, 5, 6);
+    Point startingPoint1 = new Point(2,3);
+    Ellipse ellipse2 = new Ellipse(startingPoint1, 5, 6);
     Ellipse ellipse3 = new Ellipse(ellipse2);
     Ellipse ellipse4 = new Ellipse();
     ellipse4.initialize();
