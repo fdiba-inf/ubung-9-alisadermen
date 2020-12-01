@@ -48,7 +48,7 @@ public class Ellipse {
     }
 
     public String getType() {
-        return (a == b) ? "Circle" : "Ellipse";
+        return (a == b) ? "Cycle" : "Ellipse";
     }
     public String toString() {
         return String.format("%s-[%s, %s], %s, P=%s, A=%s", startPoint, a, b, getType(), calculatePerimeter(), calculateArea());
